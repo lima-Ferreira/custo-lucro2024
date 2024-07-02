@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.main {
+    width: min(100% - 30px, 400px);
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    border: 6px solid#c19950;
+    border-top: 22px solid #c19950;
+    border-radius: 0 0 4px 4px;
+}
+
+.container {
+    width: min(100% - 30px, 300px);
+
+}
+
+.item {
+    margin-bottom: 5px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: -5px;
+    color: #67788a;
+}
+
+.item input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    padding-right: 5px;
+    background: #0d161f;
+    color: #c19950;
+    padding-left: 5px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.custo-atual {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    padding-right: 5px;
+    background: #0d161f;
+    color: #c19950;
+    padding-left: 5px;
+    font-family: 'Inconsolata', monospace;
+    cursor: text;
+    text-align: right;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: #c19950;
+}
+
+.item input:hover {
+    background: #090f14;
+}
+
+.juros label {
+    display: block;
+    margin-bottom: -5px;
+}
+
+
+.juros {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    gap: 2px;
+}
+
+.juros-item {
+    width: 100%;
+}
+
+
+.mySelect {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background: #0d161f;
+    color: #c19950;
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+}
+
+
+.result {
+    width: 100%;
+    height: 100px;
+    background: #090f14;
+    border: 1px solid #67788a;
+    border-radius: 4px;
+    cursor: text;
+}
+
+.result p {
+    color: green;
+    text-transform: capitalize;
+    padding: 2px 2px;
+    text-align: center;
+}
+
+.custo-atual:hover {
+    background: #090f14;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    gap: 4px;
+}
+
+.button button {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border: 1px solid #67788a;
+    color: #c19950;
+    background: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button button:hover {
+    border: 1px solid #c19950;
+    color: #3e5d7e;
+}
+
+.button button:active {
+    border: 1px solid #c19950;
+    color: #213346;
+}
+
+h2,
+h4 {
+    text-align: center;
+    color: #c19950;
+    text-transform: uppercase;
+}
+
+@media(max-width:370px) {
+    .juros {
+        width: 280px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .juros-item {
+        width: 140px;
+
+    }
+
+    .mySelect {
+        display: block;
+        width: 100%;
+
+    }
+}
+
+@media(max-width:341px) {
+    .juros {
+        width: 270px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:340px) {
+    .juros {
+        width: 260px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:330px) {
+    .juros {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:320px) {
+    .juros {
+        width: 240px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:310px) {
+    .juros {
+        width: 230px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:300px) {
+    .juros {
+        width: 210px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

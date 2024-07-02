@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet" />
+    <title>Calculadora de preço</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <h2>custos e lucros</h2>
+            <div class="item">
+                <label>compra</label>
+                <input class="input-compra" type="text" placeholder="0,00">
+            </div>
+            <div class="item">
+                <label>venda</label>
+                <input class="input-venda" type="text" placeholder="0,00">
+            </div>
+            <div class="item">
+                <label>custo anterior</label>
+                <input class="input-custo" type="text" placeholder="0,00">
+            </div>
+            <h4>juros e comissões</h4>
+            <div class="juros">
+                <div class="juros-item">
+                    <select class="mySelect" id="cartao">
+                        <option type="text">0</option>
+                        <option type="text">1%</option>
+                        <option type="text">1.5%</option>
+                        <option type="text">2%</option>
+                        <option type="text">3%</option>
+                        <option type="text">3.5%</option>
+                        <option type="text">4%</option>
+                        <option type="text">4.5%</option>
+                        <option type="text">5%</option>
+                        <option type="text">6%</option>
+                        <option type="text">6.5%</option>
+                    </select>
+                </div>
+                <div class="juros-item">
+                    <select class="mySelect" id="comissao">
+                        <option type="text">0</option>
+                        <option type="text">1%</option>
+                        <option type="text">1.5%</option>
+                        <option type="text">2%</option>
+                        <option type="text">3%</option>
+                        <option type="text">3.5%</option>
+                        <option type="text">4%</option>
+                        <option type="text">4.5%</option>
+                        <option type="text">5%</option>
+                        <option type="text">6%</option>
+                        <option type="text">6.5%</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <label>custo atual</label>
+                <div class="custo-atual"></div>
+            </div>
+            <section class="result">
+
+            </section>
+            <div class="button">
+                <button class="calcular btn">calcular</button>
+                <button class="clear btn">limpar</button>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
